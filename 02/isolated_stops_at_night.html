@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f75fc9a53978851888eba33f9ea9f4a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f75fc9a53978851888eba33f9ea9f4a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f75fc9a53978851888eba33f9ea9f4a = L.map(
+                "map_3f75fc9a53978851888eba33f9ea9f4a",
+                {
+                    center: [50.0755, 14.4378],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_535b36c75e79f6d3a2d6ca24172d31a5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_535b36c75e79f6d3a2d6ca24172d31a5.addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+    
+            var circle_marker_bfe142074d426989b4760bebdf26d201 = L.circleMarker(
+                [50.104855, 14.394743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_ba8c5cc542c267d5cf2e55a2a9e610dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6707ef463422f13b9fc13bee6becd6b4 = $(`<div id="html_6707ef463422f13b9fc13bee6becd6b4" style="width: 100.0%; height: 100.0%;">Lotyšská</div>`)[0];
+                popup_ba8c5cc542c267d5cf2e55a2a9e610dd.setContent(html_6707ef463422f13b9fc13bee6becd6b4);
+            
+        
+
+        circle_marker_bfe142074d426989b4760bebdf26d201.bindPopup(popup_ba8c5cc542c267d5cf2e55a2a9e610dd)
+        ;
+
+        
+    
+    
+            var circle_marker_5392b678e753d47f0424c0977dd4146b = L.circleMarker(
+                [50.05806, 14.38772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_dc98281bcb62b8303b930a6dc3fb7284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04bc05a1888083c6060c77cd209bb951 = $(`<div id="html_04bc05a1888083c6060c77cd209bb951" style="width: 100.0%; height: 100.0%;">Radlická</div>`)[0];
+                popup_dc98281bcb62b8303b930a6dc3fb7284.setContent(html_04bc05a1888083c6060c77cd209bb951);
+            
+        
+
+        circle_marker_5392b678e753d47f0424c0977dd4146b.bindPopup(popup_dc98281bcb62b8303b930a6dc3fb7284)
+        ;
+
+        
+    
+    
+            var circle_marker_035093e0626b9c0b08aef64047a15862 = L.circleMarker(
+                [50.061745, 14.401199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_790654fc6eadb5859b02f0958df0569c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d697eb91b3d0e84f4fa31d404be37427 = $(`<div id="html_d697eb91b3d0e84f4fa31d404be37427" style="width: 100.0%; height: 100.0%;">Braunova</div>`)[0];
+                popup_790654fc6eadb5859b02f0958df0569c.setContent(html_d697eb91b3d0e84f4fa31d404be37427);
+            
+        
+
+        circle_marker_035093e0626b9c0b08aef64047a15862.bindPopup(popup_790654fc6eadb5859b02f0958df0569c)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb257f5af59e2c12a47d0d8e2e2bcba = L.circleMarker(
+                [50.095406, 14.437011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_fd1456dcf01e8ad44acdfe6d39946297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6507232fdbae39e4dd546be11e793a4 = $(`<div id="html_d6507232fdbae39e4dd546be11e793a4" style="width: 100.0%; height: 100.0%;">Štvanice</div>`)[0];
+                popup_fd1456dcf01e8ad44acdfe6d39946297.setContent(html_d6507232fdbae39e4dd546be11e793a4);
+            
+        
+
+        circle_marker_4cb257f5af59e2c12a47d0d8e2e2bcba.bindPopup(popup_fd1456dcf01e8ad44acdfe6d39946297)
+        ;
+
+        
+    
+    
+            var circle_marker_3465503f8e909397670ca412d05dbfa4 = L.circleMarker(
+                [50.087902, 14.388128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_dea737a4e89551aa7de3f182613d5aeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ff3f05aaff3fe6eafa2892ca678c244 = $(`<div id="html_9ff3f05aaff3fe6eafa2892ca678c244" style="width: 100.0%; height: 100.0%;">Pohořelec</div>`)[0];
+                popup_dea737a4e89551aa7de3f182613d5aeb.setContent(html_9ff3f05aaff3fe6eafa2892ca678c244);
+            
+        
+
+        circle_marker_3465503f8e909397670ca412d05dbfa4.bindPopup(popup_dea737a4e89551aa7de3f182613d5aeb)
+        ;
+
+        
+    
+    
+            var circle_marker_ac875cdaaa287d6b1eab48df306eed6c = L.circleMarker(
+                [50.063694, 14.405491],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_0057297a36ffef7d224281792c67db31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61346bb09813d6cc15429c21d67c8697 = $(`<div id="html_61346bb09813d6cc15429c21d67c8697" style="width: 100.0%; height: 100.0%;">Křížová</div>`)[0];
+                popup_0057297a36ffef7d224281792c67db31.setContent(html_61346bb09813d6cc15429c21d67c8697);
+            
+        
+
+        circle_marker_ac875cdaaa287d6b1eab48df306eed6c.bindPopup(popup_0057297a36ffef7d224281792c67db31)
+        ;
+
+        
+    
+    
+            var circle_marker_6644ba165ce9a84376dd6ec4986066a5 = L.circleMarker(
+                [50.071148, 14.434821],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_d5b7c9a18eaa8d2f68c9df066ca7e9cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1b5f471199209e46fc047f5d444b8f1 = $(`<div id="html_c1b5f471199209e46fc047f5d444b8f1" style="width: 100.0%; height: 100.0%;">Zvonařka</div>`)[0];
+                popup_d5b7c9a18eaa8d2f68c9df066ca7e9cc.setContent(html_c1b5f471199209e46fc047f5d444b8f1);
+            
+        
+
+        circle_marker_6644ba165ce9a84376dd6ec4986066a5.bindPopup(popup_d5b7c9a18eaa8d2f68c9df066ca7e9cc)
+        ;
+
+        
+    
+    
+            var circle_marker_62107e9c1094f001728f314449a64c87 = L.circleMarker(
+                [50.059448, 14.392869],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_2c2802a8797eecba381a68742624d0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07963f65e2ac85eddf0f6a25720b255f = $(`<div id="html_07963f65e2ac85eddf0f6a25720b255f" style="width: 100.0%; height: 100.0%;">Škola Radlice</div>`)[0];
+                popup_2c2802a8797eecba381a68742624d0e3.setContent(html_07963f65e2ac85eddf0f6a25720b255f);
+            
+        
+
+        circle_marker_62107e9c1094f001728f314449a64c87.bindPopup(popup_2c2802a8797eecba381a68742624d0e3)
+        ;
+
+        
+    
+    
+            var circle_marker_483ca54334584cfaeadc2f640d80ed31 = L.circleMarker(
+                [50.107662, 14.394637],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_8b22fa38b926810aef3f83f9ea4fdc0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b12dd7aa49b0eeb5da40ce850f9747a = $(`<div id="html_5b12dd7aa49b0eeb5da40ce850f9747a" style="width: 100.0%; height: 100.0%;">Zelená</div>`)[0];
+                popup_8b22fa38b926810aef3f83f9ea4fdc0c.setContent(html_5b12dd7aa49b0eeb5da40ce850f9747a);
+            
+        
+
+        circle_marker_483ca54334584cfaeadc2f640d80ed31.bindPopup(popup_8b22fa38b926810aef3f83f9ea4fdc0c)
+        ;
+
+        
+    
+    
+            var circle_marker_0e6f7575a5e9fd157526aafa4a973d89 = L.circleMarker(
+                [50.081356, 14.410183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_2c2210bcae567b9eb86f8398ef8a9a9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e1a931140805dc37c1b6fc5cca7dca2 = $(`<div id="html_2e1a931140805dc37c1b6fc5cca7dca2" style="width: 100.0%; height: 100.0%;">Střelecký ostrov</div>`)[0];
+                popup_2c2210bcae567b9eb86f8398ef8a9a9f.setContent(html_2e1a931140805dc37c1b6fc5cca7dca2);
+            
+        
+
+        circle_marker_0e6f7575a5e9fd157526aafa4a973d89.bindPopup(popup_2c2210bcae567b9eb86f8398ef8a9a9f)
+        ;
+
+        
+    
+    
+            var circle_marker_52a4edda138d0957dfc9eeca0d37531e = L.circleMarker(
+                [50.098064, 14.44635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_c088c1556231cd9ae48b75c9c6a1db58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f28bdb545d51587be7ef2c8b060d8349 = $(`<div id="html_f28bdb545d51587be7ef2c8b060d8349" style="width: 100.0%; height: 100.0%;">Pražská tržnice</div>`)[0];
+                popup_c088c1556231cd9ae48b75c9c6a1db58.setContent(html_f28bdb545d51587be7ef2c8b060d8349);
+            
+        
+
+        circle_marker_52a4edda138d0957dfc9eeca0d37531e.bindPopup(popup_c088c1556231cd9ae48b75c9c6a1db58)
+        ;
+
+        
+    
+    
+            var circle_marker_f4d9b2cd0f09c256a06d88b734cf9946 = L.circleMarker(
+                [50.029995, 14.361431],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_7222826b2e017308f316e3cd87793dca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f1b9d0d67b9fab7393285e25b3efbea = $(`<div id="html_2f1b9d0d67b9fab7393285e25b3efbea" style="width: 100.0%; height: 100.0%;">Náměstí Olgy Scheinpflugové</div>`)[0];
+                popup_7222826b2e017308f316e3cd87793dca.setContent(html_2f1b9d0d67b9fab7393285e25b3efbea);
+            
+        
+
+        circle_marker_f4d9b2cd0f09c256a06d88b734cf9946.bindPopup(popup_7222826b2e017308f316e3cd87793dca)
+        ;
+
+        
+    
+    
+            var circle_marker_8a8ef3a2cd01bf70d6b030120302e5d5 = L.circleMarker(
+                [50.097385, 14.410265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_5778aad8c9b4a391294a894220a9629f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afb399048c3eeca110a745e77253fe0f = $(`<div id="html_afb399048c3eeca110a745e77253fe0f" style="width: 100.0%; height: 100.0%;">Špejchar</div>`)[0];
+                popup_5778aad8c9b4a391294a894220a9629f.setContent(html_afb399048c3eeca110a745e77253fe0f);
+            
+        
+
+        circle_marker_8a8ef3a2cd01bf70d6b030120302e5d5.bindPopup(popup_5778aad8c9b4a391294a894220a9629f)
+        ;
+
+        
+    
+    
+            var circle_marker_bc2a09017d4504fac55e22b7bcac9fb5 = L.circleMarker(
+                [50.111931, 14.394121],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_25628317c5211609bcc8cd4bc8ecb8ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb0862add1d1d05e33a521283bbed8df = $(`<div id="html_cb0862add1d1d05e33a521283bbed8df" style="width: 100.0%; height: 100.0%;">Nádraží Podbaba</div>`)[0];
+                popup_25628317c5211609bcc8cd4bc8ecb8ee.setContent(html_cb0862add1d1d05e33a521283bbed8df);
+            
+        
+
+        circle_marker_bc2a09017d4504fac55e22b7bcac9fb5.bindPopup(popup_25628317c5211609bcc8cd4bc8ecb8ee)
+        ;
+
+        
+    
+    
+            var circle_marker_b2860006cec16d63b65d763aeb6b207e = L.circleMarker(
+                [50.10029, 14.43849],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_ccad9d14a1eeb68ba5c775c464902774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25ad4a9a9479871cef59fd2b87bd029a = $(`<div id="html_25ad4a9a9479871cef59fd2b87bd029a" style="width: 100.0%; height: 100.0%;">Vltavská</div>`)[0];
+                popup_ccad9d14a1eeb68ba5c775c464902774.setContent(html_25ad4a9a9479871cef59fd2b87bd029a);
+            
+        
+
+        circle_marker_b2860006cec16d63b65d763aeb6b207e.bindPopup(popup_ccad9d14a1eeb68ba5c775c464902774)
+        ;
+
+        
+    
+    
+            var circle_marker_079b030b3f2d468c81aa8eca38d8095e = L.circleMarker(
+                [50.077965, 14.417949],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_6bf8bf37316398afb073422b96515300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e68cef69e6f9ba9be70115232f6ae38d = $(`<div id="html_e68cef69e6f9ba9be70115232f6ae38d" style="width: 100.0%; height: 100.0%;">Myslíkova</div>`)[0];
+                popup_6bf8bf37316398afb073422b96515300.setContent(html_e68cef69e6f9ba9be70115232f6ae38d);
+            
+        
+
+        circle_marker_079b030b3f2d468c81aa8eca38d8095e.bindPopup(popup_6bf8bf37316398afb073422b96515300)
+        ;
+
+        
+    
+    
+            var circle_marker_e30156d3ba4eec388bb8dab363e009ef = L.circleMarker(
+                [50.026985, 14.35787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_a4c806ca3ea831f84464dacd8d876d4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_951702040d117cbf8d2b973cfc70054a = $(`<div id="html_951702040d117cbf8d2b973cfc70054a" style="width: 100.0%; height: 100.0%;">Holyně</div>`)[0];
+                popup_a4c806ca3ea831f84464dacd8d876d4c.setContent(html_951702040d117cbf8d2b973cfc70054a);
+            
+        
+
+        circle_marker_e30156d3ba4eec388bb8dab363e009ef.bindPopup(popup_a4c806ca3ea831f84464dacd8d876d4c)
+        ;
+
+        
+    
+    
+            var circle_marker_d765b3484671b1d47a2174ede75456fe = L.circleMarker(
+                [50.100777, 14.450016],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_686f2c6e3d326aeb8dcb449d67ca61e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4356f61a0b38fd313aab9ca94b9e413 = $(`<div id="html_b4356f61a0b38fd313aab9ca94b9e413" style="width: 100.0%; height: 100.0%;">Tusarova</div>`)[0];
+                popup_686f2c6e3d326aeb8dcb449d67ca61e4.setContent(html_b4356f61a0b38fd313aab9ca94b9e413);
+            
+        
+
+        circle_marker_d765b3484671b1d47a2174ede75456fe.bindPopup(popup_686f2c6e3d326aeb8dcb449d67ca61e4)
+        ;
+
+        
+    
+    
+            var circle_marker_25338842072c522d0005b1a1e1de4ad8 = L.circleMarker(
+                [50.091721, 14.43663],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_a50f9fc97b51cdedb4e6ac9d3b1dd8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e985388e83ff9efe6110730a2c4dee = $(`<div id="html_61e985388e83ff9efe6110730a2c4dee" style="width: 100.0%; height: 100.0%;">Těšnov</div>`)[0];
+                popup_a50f9fc97b51cdedb4e6ac9d3b1dd8ce.setContent(html_61e985388e83ff9efe6110730a2c4dee);
+            
+        
+
+        circle_marker_25338842072c522d0005b1a1e1de4ad8.bindPopup(popup_a50f9fc97b51cdedb4e6ac9d3b1dd8ce)
+        ;
+
+        
+    
+    
+            var circle_marker_3daec8cf6f3ef9fb40fd16dc377c1273 = L.circleMarker(
+                [50.093166, 14.392696],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_a360530971e7b954b4110fad4689de34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31bbfaa8dfb32536aeaa2f2a5484f0da = $(`<div id="html_31bbfaa8dfb32536aeaa2f2a5484f0da" style="width: 100.0%; height: 100.0%;">Brusnice</div>`)[0];
+                popup_a360530971e7b954b4110fad4689de34.setContent(html_31bbfaa8dfb32536aeaa2f2a5484f0da);
+            
+        
+
+        circle_marker_3daec8cf6f3ef9fb40fd16dc377c1273.bindPopup(popup_a360530971e7b954b4110fad4689de34)
+        ;
+
+        
+    
+    
+            var circle_marker_a55577e0b638ca70e4bc1240bad861f3 = L.circleMarker(
+                [50.05104, 14.43967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_95dd851617e4300ff66a4df5bb244c32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_367a4e566c6ccff700cbb123039e1c86 = $(`<div id="html_367a4e566c6ccff700cbb123039e1c86" style="width: 100.0%; height: 100.0%;">Pankrác</div>`)[0];
+                popup_95dd851617e4300ff66a4df5bb244c32.setContent(html_367a4e566c6ccff700cbb123039e1c86);
+            
+        
+
+        circle_marker_a55577e0b638ca70e4bc1240bad861f3.bindPopup(popup_95dd851617e4300ff66a4df5bb244c32)
+        ;
+
+        
+    
+    
+            var circle_marker_ab2aa7a5c1416b34a530d58d5c3d91df = L.circleMarker(
+                [50.061134, 14.397359],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_3f75fc9a53978851888eba33f9ea9f4a);
+        
+    
+        var popup_8c3d157481a2311bd1c2436c2b666e35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5076bd52b07c6021249c2b1058a5ddae = $(`<div id="html_5076bd52b07c6021249c2b1058a5ddae" style="width: 100.0%; height: 100.0%;">Laurová</div>`)[0];
+                popup_8c3d157481a2311bd1c2436c2b666e35.setContent(html_5076bd52b07c6021249c2b1058a5ddae);
+            
+        
+
+        circle_marker_ab2aa7a5c1416b34a530d58d5c3d91df.bindPopup(popup_8c3d157481a2311bd1c2436c2b666e35)
+        ;
+
+        
+    
+</script>
+</html>
